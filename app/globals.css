@@ -4,12 +4,12 @@
 
 :root {
   color-scheme: light;
-  --color-ink: #25352e;
-  --color-forest: #355545;
-  --color-sage: #c4cfb8;
-  --color-cream: #fbfaf6;
-  --color-clay: #b97d61;
-  --color-muted: #6f766e;
+  --color-coral: #ff7065;
+  --color-raspberry: #d02f68;
+  --color-aubergine: #321725;
+  --color-yellow: #ffda25;
+  --color-turquoise: #59b0b1;
+  --font-reading: var(--font-inter), sans-serif;
 }
 
 * {
@@ -18,25 +18,25 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 1.5rem;
+  scroll-padding-top: 2rem;
 }
 
 body {
   margin: 0;
-  background: var(--color-cream);
-  color: var(--color-ink);
-  font-family: var(--font-sans), sans-serif;
+  background: #fff;
+  color: var(--color-aubergine);
+  font-family: var(--font-reading);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 ::selection {
-  background: var(--color-sage);
-  color: var(--color-ink);
+  background: var(--color-yellow);
+  color: var(--color-aubergine);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-clay);
+  outline: 2px solid var(--color-raspberry);
   outline-offset: 4px;
 }
 
@@ -47,9 +47,9 @@ body {
   z-index: 100;
   transform: translateY(-160%);
   border-radius: 9999px;
-  background: var(--color-forest);
+  background: var(--color-aubergine);
   padding: 0.75rem 1rem;
-  color: white;
+  color: #fff;
   transition: transform 180ms ease;
 }
 

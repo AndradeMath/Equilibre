@@ -9,19 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "var(--color-ink)",
-        forest: "var(--color-forest)",
-        sage: "var(--color-sage)",
-        cream: "var(--color-cream)",
-        clay: "var(--color-clay)",
-        muted: "var(--color-muted)",
+        coral: "var(--color-coral)",
+        raspberry: "var(--color-raspberry)",
+        aubergine: "var(--color-aubergine)",
+        yellow: "var(--color-yellow)",
+        turquoise: "var(--color-turquoise)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "sans-serif"],
-        serif: ["var(--font-serif)", "serif"],
+        sans: ["var(--font-inter)", "sans-serif"],
+        display: ["var(--font-fraunces)", "serif"],
       },
       boxShadow: {
-        card: "0 24px 70px -38px rgb(34 47 39 / 30%)",
+        editorial: "0 18px 56px -40px rgb(50 23 37 / 32%)",
       },
     },
   },

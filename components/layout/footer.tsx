@@ -1,64 +1,44 @@
 import Link from "next/link";
-import { Instagram, MoveUpRight } from "lucide-react";
 import { navigation } from "@/lib/content";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1d3028] text-cream">
-      <div className="mx-auto max-w-7xl px-5 pb-8 pt-16 sm:px-8 lg:px-12 lg:pt-20">
-        <div className="grid gap-12 border-b border-white/15 pb-12 md:grid-cols-[1.3fr_1fr_1fr]">
+    <footer className="bg-aubergine text-white">
+      <div className="mx-auto max-w-[1440px] px-5 pb-8 pt-14 sm:px-8 lg:px-12 lg:pt-16">
+        <div className="grid gap-10 border-b border-white/20 pb-10 md:grid-cols-[1fr_2fr]">
           <div>
             <Link
               href="/"
-              className="font-serif text-3xl tracking-[-0.06em]"
+              className="font-display text-3xl tracking-[-0.07em]"
               aria-label="Equilibre — início"
             >
-              equilibre<span className="text-sage">.</span>
+              equilibre<span className="text-coral">.</span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm leading-6 text-cream/65">
-              Um espaço para voltar a você. Bem-estar com intenção, leveza e
-              presença.
+            <p className="mt-4 max-w-sm text-sm leading-6 text-white/75">
+              Saúde, conhecimento e bem-estar para acompanhar o seu ritmo.
             </p>
           </div>
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-sage">
-              Explore
+          <nav aria-label="Navegação do rodapé">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-yellow">
+              Explore a Equilibre
             </h2>
-            <nav aria-label="Navegação do rodapé" className="mt-5 grid gap-3">
+            <ul className="mt-5 grid gap-x-6 gap-y-3 sm:grid-cols-2 lg:grid-cols-4">
               {navigation.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="w-fit text-sm text-cream/75 transition-colors hover:text-white"
-                >
-                  {item.label}
-                </Link>
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-white/80 transition-colors hover:text-coral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
               ))}
-            </nav>
-          </div>
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-sage">
-              Vamos conversar?
-            </h2>
-            <Link
-              href="mailto:ola@equilibre.com.br"
-              className="mt-5 inline-flex items-center gap-2 text-sm text-cream/75 transition-colors hover:text-white"
-            >
-              ola@equilibre.com.br
-              <MoveUpRight size={14} aria-hidden="true" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/"
-              aria-label="Visite o Instagram da Equilibre"
-              className="mt-5 flex size-10 items-center justify-center rounded-full border border-white/20 transition-colors hover:bg-white/10"
-            >
-              <Instagram size={17} aria-hidden="true" />
-            </Link>
-          </div>
+            </ul>
+          </nav>
         </div>
-        <div className="flex flex-col gap-3 pt-6 text-xs text-cream/50 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 pt-6 text-xs text-white/65 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Equilibre. Todos os direitos reservados.</p>
-          <p>Feito com intenção, para a vida como ela é.</p>
+          <p>Conteúdo educativo. Não substitui orientação profissional individual.</p>
         </div>
       </div>
     </footer>

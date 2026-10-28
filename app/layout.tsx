@@ -1,34 +1,34 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-inter",
   display: "swap",
 });
 
-const cormorant = Cormorant_Garamond({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["400", "500", "600"],
+  variable: "--font-fraunces",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Equilibre — bem-estar no seu próprio ritmo",
+    default: "Equilibre — saúde, conhecimento e bem-estar",
     template: "%s | Equilibre",
   },
   description:
-    "Um espaço para voltar a você. Descubra um jeito mais leve, possível e presente de cuidar do seu bem-estar.",
+    "Um espaço editorial e educativo sobre saúde feminina, autocuidado, bem-estar e inovação em saúde.",
   applicationName: "Equilibre",
   openGraph: {
-    title: "Equilibre — volte para o seu centro",
+    title: "Equilibre — conhecimento para acompanhar o seu ritmo",
     description:
-      "Bem-estar com intenção, leveza e presença. Um passo de cada vez já é caminho.",
+      "Saúde, conhecimento e bem-estar para acompanhar o seu ritmo.",
     type: "website",
     locale: "pt_BR",
     siteName: "Equilibre",
@@ -45,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${dmSans.variable} ${cormorant.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${fraunces.variable}`}>
       <body>
         <a
           href="#conteudo-principal"

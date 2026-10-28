@@ -1,19 +1,19 @@
-import { Approach } from "@/components/sections/approach";
-import { Benefits } from "@/components/sections/benefits";
-import { CallToAction } from "@/components/sections/call-to-action";
+import { EditorialPathways } from "@/components/sections/editorial-pathways";
+import { FeaturedArticles } from "@/components/sections/featured-articles";
+import { FeaturedStories } from "@/components/sections/featured-stories";
 import { Hero } from "@/components/sections/hero";
-import { Ritual } from "@/components/sections/ritual";
-import { Testimonials } from "@/components/sections/testimonials";
+import { Newsletter } from "@/components/sections/newsletter";
+import { SelfCareQuiz } from "@/components/sections/self-care-quiz";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Approach />
-      <Benefits />
-      <Ritual />
-      <Testimonials />
-      <CallToAction />
+      <FeaturedArticles />
+      <EditorialPathways />
+      <FeaturedStories />
+      <SelfCareQuiz />
+      <Newsletter />
     </>
   );
 }
