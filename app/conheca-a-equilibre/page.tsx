@@ -30,12 +30,12 @@ const principles = [
 export default function ConhecaEquilibrePage() {
   return (
     <>
-      <section className="bg-raspberry/10">
+      <section className="bg-soft-pink">
         <div className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 sm:py-24 lg:px-12">
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
             Informação, cuidado e pesquisa
           </p>
-          <h1 className="max-w-4xl font-display text-5xl leading-[0.98] tracking-[-0.045em] text-aubergine sm:text-7xl">
+          <h1 className="max-w-4xl font-sans text-5xl font-bold leading-[1.02] tracking-[-0.045em] text-aubergine sm:text-7xl">
             Conheça a Equilibre
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-aubergine/80">
@@ -46,7 +46,7 @@ export default function ConhecaEquilibrePage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-cream py-16 sm:py-24">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
           <SectionHeading
             eyebrow="O que nos guia"
@@ -55,11 +55,11 @@ export default function ConhecaEquilibrePage() {
           />
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {principles.map((principle, index) => (
-              <article key={principle.title} className="border-t-2 border-coral pt-5">
+              <article key={principle.title} className="rounded-[28px] bg-soft-coral p-6 shadow-card sm:p-7">
                 <span className="text-xs font-semibold tracking-[0.16em] text-raspberry">
                   0{index + 1}
                 </span>
-                <h2 className="mt-4 font-display text-2xl text-aubergine">
+                <h2 className="mt-4 font-sans text-2xl font-bold text-aubergine">
                   {principle.title}
                 </h2>
                 <p className="mt-3 text-sm leading-6 text-aubergine/75">
@@ -71,13 +71,13 @@ export default function ConhecaEquilibrePage() {
         </div>
       </section>
 
-      <section className="bg-turquoise/15 py-16 sm:py-24">
+      <section className="bg-soft-turquoise py-16 sm:py-24">
         <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
               Tecnologia em contexto
             </p>
-            <h2 className="font-display text-4xl leading-tight tracking-tight text-aubergine sm:text-5xl">
+            <h2 className="font-sans text-4xl font-bold leading-tight tracking-tight text-aubergine sm:text-5xl">
               Microagulhas dissolvíveis: uma proposta em pesquisa.
             </h2>
           </div>
@@ -95,7 +95,7 @@ export default function ConhecaEquilibrePage() {
               dados de estudo e situação regulatória precisam ser confirmados e
               documentados pela equipe responsável.
             </p>
-            <p className="rounded-2xl border border-aubergine/15 bg-white p-5 text-sm leading-6">
+            <p className="rounded-[24px] border border-aubergine/15 bg-cream p-5 text-sm leading-6 shadow-card">
               <strong className="text-aubergine">Transparência:</strong> o
               estágio de pesquisa e validação de uma proposta específica da
               Equilibre não foi informado no material disponível para este

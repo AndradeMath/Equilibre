@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 export default function EquilibreRespondePage() {
   return (
     <>
-      <section className="bg-turquoise/20">
+      <section className="bg-soft-turquoise">
         <div className="mx-auto max-w-[1440px] px-5 py-16 sm:px-8 sm:py-24 lg:px-12">
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
             Perguntas que merecem boas respostas
           </p>
-          <h1 className="max-w-4xl font-display text-5xl leading-[0.98] tracking-[-0.045em] text-aubergine sm:text-7xl">
+          <h1 className="max-w-4xl font-sans text-5xl font-bold leading-[1.02] tracking-[-0.045em] text-aubergine sm:text-7xl">
             EQUILIBRE Responde
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-aubergine/80">
@@ -28,7 +28,7 @@ export default function EquilibreRespondePage() {
           </p>
         </div>
       </section>
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-soft-pink py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8">
           <SectionHeading
             eyebrow="Perguntas frequentes"
@@ -38,7 +38,7 @@ export default function EquilibreRespondePage() {
           <div className="mt-10 divide-y divide-aubergine/15 border-y border-aubergine/15">
             {questions.map((item, index) => (
               <details key={item.question} className="group py-6">
-                <summary className="flex cursor-pointer list-none items-start justify-between gap-5 rounded-sm font-display text-2xl leading-snug text-aubergine marker:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry sm:text-3xl [&::-webkit-details-marker]:hidden">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-5 rounded-sm font-sans text-2xl font-bold leading-snug text-aubergine marker:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry sm:text-3xl [&::-webkit-details-marker]:hidden">
                   <span className="flex gap-4">
                     <span className="pt-1 font-sans text-xs font-semibold text-raspberry">
                       0{index + 1}

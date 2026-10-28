@@ -4,12 +4,13 @@ import { EditorialHero } from "@/components/sections/editorial-hero";
 import { ArticleCard } from "@/components/ui/article-card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { sections } from "@/lib/content";
+import { BrandLeaf } from "@/components/ui/brand-leaf";
 
 type EditorialPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-const tones = ["coral", "turquoise", "yellow", "raspberry"] as const;
+const tones = ["raspberry", "yellow", "coral", "turquoise"] as const;
 
 export function generateStaticParams() {
   return sections.map(({ slug }) => ({ slug }));
@@ -49,7 +50,7 @@ export default async function EditorialPage({ params }: EditorialPageProps) {
         topics={section.topics}
         tone={tones[index]}
       />
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-cream py-16 sm:py-24">
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
           <SectionHeading
             eyebrow="Em destaque"
@@ -61,7 +62,7 @@ export default async function EditorialPage({ params }: EditorialPageProps) {
           </div>
         </div>
       </section>
-      <section className="bg-coral/10 py-16 sm:py-24">
+      <section className={`${index % 2 === 0 ? "bg-soft-pink" : "bg-soft-turquoise"} py-16 sm:py-24`}>
         <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
           <SectionHeading
             eyebrow={section.title}
@@ -80,15 +81,18 @@ export default async function EditorialPage({ params }: EditorialPageProps) {
           </p>
         </div>
       </section>
-      <nav aria-label="Outras editorias" className="bg-white py-10">
-        <div className="mx-auto flex max-w-[1440px] flex-wrap gap-3 px-5 sm:px-8 lg:px-12">
+      <nav aria-label="Outras editorias" className="relative overflow-hidden bg-soft-yellow py-10">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-4 -top-5 text-raspberry/25">
+          <BrandLeaf className="size-24 rotate-12" />
+        </div>
+        <div className="relative mx-auto flex max-w-[1440px] flex-wrap gap-3 px-5 sm:px-8 lg:px-12">
           {sections
             .filter((entry) => entry.slug !== slug)
             .map((entry) => (
               <a
                 key={entry.slug}
                 href={`/editorias/${entry.slug}`}
-                className="rounded-full border border-aubergine/20 px-4 py-2.5 text-sm font-medium text-aubergine transition-colors hover:border-raspberry hover:text-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-raspberry"
+                className="rounded-full border border-aubergine/20 px-4 py-2.5 text-sm font-semibold text-aubergine transition-colors hover:border-raspberry hover:text-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-raspberry"
               >
                 {entry.title}
               </a>

@@ -8,7 +8,7 @@ const pathways = [sections[0], sections[2], sections[3]];
 
 export function EditorialPathways() {
   return (
-    <section className="bg-coral/10 py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-soft-coral py-20 sm:py-28">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <SectionHeading
           eyebrow="Por onde você quer começar?"
@@ -19,7 +19,7 @@ export function EditorialPathways() {
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {pathways.map((section, index) => (
             <Reveal key={section.slug} delay={index * 0.08}>
-              <article className="relative h-full overflow-hidden rounded-[46%_46%_1.5rem_1.5rem] bg-white px-7 pb-7 pt-10 sm:px-8 sm:pt-12">
+              <article className="relative h-full overflow-hidden rounded-[28px] bg-cream px-7 pb-7 pt-10 shadow-card transition-transform duration-300 hover:-translate-y-1 sm:px-8 sm:pt-12">
               <span
                 aria-hidden="true"
                 className={`absolute -right-8 -top-8 size-28 rounded-full ${index === 0 ? "bg-yellow/75" : index === 1 ? "bg-turquoise/35" : "bg-raspberry/20"}`}

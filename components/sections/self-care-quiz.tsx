@@ -31,7 +31,7 @@ export function SelfCareQuiz() {
   const [selected, setSelected] = useState<(typeof choices)[number] | null>(null);
 
   return (
-    <section className="bg-turquoise/20 py-20 sm:py-28">
+    <section className="bg-soft-turquoise py-20 sm:py-28">
       <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:gap-20 lg:px-12">
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
@@ -50,10 +50,10 @@ export function SelfCareQuiz() {
           </p>
         </div>
 
-        <div className="rounded-[2rem] bg-white p-6 sm:p-9">
+        <div className="rounded-[28px] bg-cream p-6 shadow-card sm:p-9">
           {!selected ? (
             <fieldset>
-              <legend className="font-display text-2xl leading-snug text-aubergine sm:text-3xl">
+              <legend className="font-sans text-2xl font-bold leading-snug text-aubergine sm:text-3xl">
                 O que você gostaria de explorar hoje?
               </legend>
               <div className="mt-6 grid gap-3">
@@ -62,7 +62,7 @@ export function SelfCareQuiz() {
                     key={choice.href}
                     type="button"
                     onClick={() => setSelected(choice)}
-                    className="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-aubergine/15 px-5 py-4 text-left text-sm font-medium text-aubergine transition-colors hover:border-raspberry hover:bg-raspberry/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-raspberry"
+                    className="group flex min-h-14 items-center justify-between gap-4 rounded-2xl border border-aubergine/15 px-5 py-4 text-left text-sm font-semibold text-aubergine transition-colors hover:border-raspberry hover:bg-soft-pink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-raspberry"
                   >
                     {choice.label}
                     <ArrowRight
@@ -89,7 +89,7 @@ export function SelfCareQuiz() {
               <div className="mt-6 flex flex-wrap items-center gap-4">
                 <Link
                   href={selected.href}
-                  className="inline-flex min-h-11 items-center gap-2 rounded-full bg-aubergine px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full bg-raspberry px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-aubergine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
                 >
                   Ver conteúdos
                   <ArrowRight size={15} aria-hidden="true" />
@@ -97,7 +97,7 @@ export function SelfCareQuiz() {
                 <button
                   type="button"
                   onClick={() => setSelected(null)}
-                  className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-aubergine hover:text-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
+                  className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-aubergine hover:text-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
                 >
                   <RotateCcw size={14} aria-hidden="true" />
                   Escolher outro tema

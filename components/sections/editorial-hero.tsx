@@ -9,10 +9,10 @@ type EditorialHeroProps = {
 };
 
 const toneClasses = {
-  coral: "bg-coral/15",
-  raspberry: "bg-raspberry/10",
-  turquoise: "bg-turquoise/15",
-  yellow: "bg-yellow/30",
+  coral: "bg-soft-coral",
+  raspberry: "bg-soft-pink",
+  turquoise: "bg-soft-turquoise",
+  yellow: "bg-soft-yellow",
 };
 
 export function EditorialHero({
@@ -31,7 +31,7 @@ export function EditorialHero({
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
             {eyebrow}
           </p>
-          <h1 className="max-w-3xl font-display text-5xl leading-[0.98] tracking-[-0.045em] text-aubergine sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl font-sans text-5xl font-bold leading-[1.02] tracking-[-0.045em] text-aubergine sm:text-6xl lg:text-7xl">
             {title}
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-aubergine/80 sm:text-lg sm:leading-8">
@@ -42,7 +42,7 @@ export function EditorialHero({
               {topics.map((topic, index) => (
                 <li
                   key={topic}
-                  className={`rounded-full px-4 py-2 text-xs font-medium text-aubergine ${index % 2 === 0 ? "bg-white" : "bg-yellow/50"}`}
+                  className={`rounded-full px-4 py-2 text-xs font-semibold text-aubergine ${index % 2 === 0 ? "bg-cream" : "bg-yellow/50"}`}
                 >
                   {topic}
                 </li>
@@ -51,7 +51,7 @@ export function EditorialHero({
           )}
         </div>
         <div className="relative mx-auto w-full max-w-[600px]">
-          <div className="relative aspect-[1.08] overflow-hidden rounded-[48%_48%_1.5rem_1.5rem] bg-turquoise/25">
+          <div className="relative aspect-[1.08] overflow-hidden rounded-[28px_28px_28px_120px] bg-cream shadow-editorial sm:aspect-[1.12]">
             <div
               role="img"
               aria-label={imageAlt}
@@ -60,7 +60,7 @@ export function EditorialHero({
             />
           </div>
           <span aria-hidden="true" className="absolute -bottom-4 -left-5 size-20 rounded-full bg-yellow sm:size-24" />
-          <span aria-hidden="true" className="absolute -right-3 top-8 size-12 rounded-full bg-coral sm:size-16" />
+          <span aria-hidden="true" className="absolute -right-3 top-8 size-12 rounded-full bg-raspberry sm:size-16" />
         </div>
       </div>
     </section>

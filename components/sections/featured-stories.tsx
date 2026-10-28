@@ -2,12 +2,16 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { stories } from "@/lib/content";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { BrandLeaf } from "@/components/ui/brand-leaf";
 
 export function FeaturedStories() {
   const [lead, ...rest] = stories;
 
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-soft-yellow py-20 sm:py-28">
+      <div aria-hidden="true" className="pointer-events-none absolute -right-6 top-8 hidden text-coral/40 lg:block">
+        <BrandLeaf className="size-36 -rotate-12" />
+      </div>
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
@@ -28,7 +32,7 @@ export function FeaturedStories() {
           <article className="group">
             <Link
               href="/alem-da-receita"
-              className="relative block aspect-[1.5] overflow-hidden rounded-[48%_48%_1.5rem_1.5rem] bg-coral/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
+              className="relative block aspect-[1.35] overflow-hidden rounded-[28px] bg-coral/20 shadow-editorial focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
               aria-label={`Leia: ${lead.title}`}
             >
               <div
@@ -54,7 +58,7 @@ export function FeaturedStories() {
                 <Link
                   href="/alem-da-receita"
                   aria-label={`Leia: ${story.title}`}
-                  className="relative aspect-square overflow-hidden rounded-[50%] bg-turquoise/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
+                  className="relative aspect-square overflow-hidden rounded-[24px] bg-turquoise/20 shadow-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
                 >
                   <div
                     role="img"

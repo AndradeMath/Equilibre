@@ -53,7 +53,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         imageAlt={article.imageAlt}
         tone={palette[sectionIndex]}
       />
-      <article className="bg-white py-14 sm:py-20">
+      <article className="bg-cream py-14 sm:py-20">
         <div className="mx-auto max-w-3xl px-5 sm:px-8">
           <Link
             href={`/editorias/${article.sectionSlug}`}
@@ -66,7 +66,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-raspberry">
               Conteúdo em preparação
             </p>
-            <p className="mt-3 font-display text-2xl leading-snug text-aubergine sm:text-3xl">
+            <p className="mt-3 font-sans text-2xl font-bold leading-snug text-aubergine sm:text-3xl">
               Esta pauta ainda precisa de apuração, revisão especializada e
               referências antes de ser publicada como conteúdo educativo.
             </p>
@@ -85,9 +85,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </div>
       </article>
       {relatedArticles.length > 0 && (
-        <section className="bg-coral/10 py-14 sm:py-20">
+        <section className="bg-soft-coral py-14 sm:py-20">
           <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
-            <h2 className="font-display text-3xl text-aubergine sm:text-4xl">
+            <h2 className="font-sans text-3xl font-bold text-aubergine sm:text-4xl">
               Continue nesta editoria
             </h2>
             <div className="mt-8 grid gap-8 md:grid-cols-2">

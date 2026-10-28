@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navigation } from "@/lib/content";
@@ -9,18 +10,25 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative z-50 border-b border-aubergine/10 bg-white">
+    <header className="relative z-50 border-b border-aubergine/10 bg-[#fff8f4]">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
         <Link
           href="/"
           aria-label="Equilibre — início"
-          className="font-display text-[2rem] leading-none tracking-[-0.07em] text-aubergine"
+          className="relative z-50 block h-14 w-[164px] sm:h-16 sm:w-[190px]"
         >
-          equilibre<span className="text-raspberry">.</span>
+          <Image
+            src="/brand-logo.png"
+            alt="Equilibre"
+            fill
+            priority
+            sizes="(max-width: 640px) 164px, 190px"
+            className="object-contain mix-blend-multiply"
+          />
         </Link>
         <Link
           href="/#newsletter"
-          className="hidden text-sm font-medium text-aubergine transition-colors hover:text-raspberry sm:inline-flex"
+          className="hidden rounded-full border border-raspberry/35 px-5 py-2.5 text-sm font-semibold text-raspberry transition-colors hover:bg-raspberry hover:text-white sm:inline-flex"
         >
           Uma pausa para você
         </Link>
@@ -43,7 +51,7 @@ export function Header() {
           <Link
             key={item.href}
             href={item.href}
-            className="whitespace-nowrap text-[0.76rem] font-medium text-aubergine/85 transition-colors hover:text-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
+            className="whitespace-nowrap text-[0.76rem] font-semibold text-aubergine/90 transition-colors hover:text-raspberry focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-raspberry"
           >
             {item.label}
           </Link>
@@ -51,7 +59,7 @@ export function Header() {
       </nav>
       <div
         id="mobile-navigation"
-        className={`fixed inset-0 z-40 flex flex-col justify-center overflow-y-auto bg-white px-8 pt-20 transition duration-300 lg:hidden ${menuOpen ? "visible opacity-100" : "invisible opacity-0"}`}
+        className={`fixed inset-0 z-40 flex flex-col justify-center overflow-y-auto bg-[#fff8f4] px-8 pt-20 transition duration-300 lg:hidden ${menuOpen ? "visible opacity-100" : "invisible opacity-0"}`}
         aria-hidden={!menuOpen}
       >
         <nav aria-label="Navegação móvel" className="flex flex-col items-start gap-5">

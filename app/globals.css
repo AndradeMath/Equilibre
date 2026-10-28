@@ -9,6 +9,11 @@
   --color-aubergine: #321725;
   --color-yellow: #ffda25;
   --color-turquoise: #59b0b1;
+  --color-cream: #fff8f4;
+  --color-soft-coral: #fdeee9;
+  --color-soft-pink: #fff4f6;
+  --color-soft-yellow: #fff9e5;
+  --color-soft-turquoise: #eef9f8;
   --font-reading: var(--font-inter), sans-serif;
 }
 
@@ -23,11 +28,29 @@ html {
 
 body {
   margin: 0;
-  background: #fff;
+  background: var(--color-cream);
   color: var(--color-aubergine);
   font-family: var(--font-reading);
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-reading);
+  font-weight: 700;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 ::selection {
@@ -55,6 +78,26 @@ body {
 
 .skip-link:focus {
   transform: translateY(0);
+}
+
+.brand-leaf {
+  transform-origin: 50% 90%;
+}
+
+@keyframes leaf-sway {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .brand-leaf--animate {
+    animation: leaf-sway 7s ease-in-out infinite;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

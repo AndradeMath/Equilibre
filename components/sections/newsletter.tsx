@@ -12,8 +12,8 @@ export function Newsletter() {
   }
 
   return (
-    <section id="newsletter" className="scroll-mt-8 bg-white px-5 py-20 sm:px-8 sm:py-28">
-      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-raspberry px-6 py-12 sm:px-12 sm:py-16">
+    <section id="newsletter" className="scroll-mt-8 bg-cream px-5 py-20 sm:px-8 sm:py-28">
+      <div className="relative mx-auto max-w-5xl overflow-hidden rounded-[28px] bg-raspberry px-6 py-12 shadow-editorial sm:px-12 sm:py-16">
         <span aria-hidden="true" className="absolute -right-12 -top-16 size-56 rounded-full border border-white/25" />
         <span aria-hidden="true" className="absolute -right-4 -top-8 size-40 rounded-full border border-white/25" />
         <div className="relative grid gap-8 md:grid-cols-[1fr_0.95fr] md:items-center">
@@ -37,7 +37,7 @@ export function Newsletter() {
               </p>
             ) : (
               <form onSubmit={handleSubmit}>
-                <label htmlFor="newsletter-email" className="mb-2 block text-sm font-medium text-white">
+                <label htmlFor="newsletter-email" className="mb-2 block text-sm font-semibold text-white">
                   Seu e-mail
                 </label>
                 <div className="flex flex-col gap-3 sm:flex-row">
@@ -54,7 +54,7 @@ export function Newsletter() {
                       autoComplete="email"
                       required
                       placeholder="voce@email.com"
-                      className="min-h-12 w-full rounded-full border-2 border-transparent bg-white py-3 pl-11 pr-4 text-sm text-aubergine placeholder:text-aubergine/45 focus:border-yellow focus:outline-none"
+                      className="min-h-12 w-full rounded-full border-2 border-transparent bg-cream py-3 pl-11 pr-4 text-sm text-aubergine placeholder:text-aubergine/45 focus:border-yellow focus:outline-none"
                     />
                   </div>
                   <button

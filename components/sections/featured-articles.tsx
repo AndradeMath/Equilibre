@@ -9,7 +9,7 @@ export function FeaturedArticles() {
   const [lead, ...articles] = featuredArticles;
 
   return (
-    <section id="conteudos" className="scroll-mt-8 bg-white py-20 sm:py-28">
+    <section id="conteudos" className="scroll-mt-8 bg-soft-pink py-20 sm:py-28">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading

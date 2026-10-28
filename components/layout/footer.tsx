@@ -1,18 +1,29 @@
 import Link from "next/link";
+import Image from "next/image";
+import { BrandLeaf } from "@/components/ui/brand-leaf";
 import { navigation } from "@/lib/content";
 
 export function Footer() {
   return (
-    <footer className="bg-aubergine text-white">
-      <div className="mx-auto max-w-[1440px] px-5 pb-8 pt-14 sm:px-8 lg:px-12 lg:pt-16">
+    <footer className="relative overflow-hidden bg-aubergine text-white">
+      <div aria-hidden="true" className="pointer-events-none absolute -right-10 -top-20 text-coral/25">
+        <BrandLeaf className="size-64 rotate-12 sm:size-80" />
+      </div>
+      <div className="relative mx-auto max-w-[1440px] px-5 pb-8 pt-14 sm:px-8 lg:px-12 lg:pt-16">
         <div className="grid gap-10 border-b border-white/20 pb-10 md:grid-cols-[1fr_2fr]">
-          <div>
+          <div className="relative">
             <Link
               href="/"
-              className="font-display text-3xl tracking-[-0.07em]"
+              className="relative block h-16 w-48 rounded-full bg-[#fff8f4] px-3"
               aria-label="Equilibre — início"
             >
-              equilibre<span className="text-coral">.</span>
+              <Image
+                src="/brand-logo.png"
+                alt="Equilibre"
+                fill
+                sizes="192px"
+                className="object-contain mix-blend-multiply"
+              />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-6 text-white/75">
               Saúde, conhecimento e bem-estar para acompanhar o seu ritmo.
