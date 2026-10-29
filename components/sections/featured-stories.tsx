@@ -45,7 +45,7 @@ export function FeaturedStories() {
             <p className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-raspberry">
               {lead.category}
             </p>
-            <h3 className="mt-2 max-w-2xl font-display text-3xl leading-tight tracking-tight text-aubergine sm:text-4xl">
+            <h3 className="mt-2 max-w-2xl font-sans text-3xl font-bold leading-tight tracking-tight text-aubergine sm:text-4xl">
               <Link href="/alem-da-receita" className="hover:text-raspberry">
                 {lead.title}
               </Link>
@@ -54,7 +54,7 @@ export function FeaturedStories() {
           </article>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-1">
             {rest.map((story) => (
-              <article key={story.title} className="grid grid-cols-[0.8fr_1.2fr] items-center gap-5">
+              <article key={story.title} className="group grid grid-cols-[0.8fr_1.2fr] items-center gap-5">
                 <Link
                   href="/alem-da-receita"
                   aria-label={`Leia: ${story.title}`}
@@ -63,7 +63,7 @@ export function FeaturedStories() {
                   <div
                     role="img"
                     aria-label={story.imageAlt}
-                    className="absolute inset-0 bg-cover bg-center"
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.04]"
                     style={{ backgroundImage: `url("${story.image}")` }}
                   />
                 </Link>
@@ -71,7 +71,7 @@ export function FeaturedStories() {
                   <p className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-raspberry">
                     {story.category}
                   </p>
-                  <h3 className="mt-2 font-display text-xl leading-snug text-aubergine sm:text-2xl">
+                  <h3 className="mt-2 font-sans text-xl font-bold leading-snug text-aubergine sm:text-2xl">
                     <Link href="/alem-da-receita" className="hover:text-raspberry">
                       {story.title}
                     </Link>

@@ -28,9 +28,8 @@ export const sections = [
       "Informação clara para conhecer melhor o seu corpo, compreender mudanças e fazer perguntas com confiança.",
     intro: "Conhecimento para escutar o corpo com mais atenção.",
     topics: ["Deficiência de ferro", "Anemia ferropriva", "Menstruação", "Saúde feminina"],
-    image:
-      "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1400&q=85",
-    imageAlt: "Mulher em momento de pausa e atenção ao próprio bem-estar",
+    image: "/equilibre/saude-feminina-editorial.webp",
+    imageAlt: "Composição editorial Equilibre sobre saúde feminina e ciclo menstrual",
     articles: [
       {
         category: "Conhecimento do corpo",
@@ -38,9 +37,8 @@ export const sections = [
         excerpt:
           "Um ponto de partida para organizar dúvidas e conversar sobre saúde com um profissional.",
         readingTime: "5 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1100&q=85",
-        imageAlt: "Anotações em um caderno durante um momento de leitura",
+        image: "/equilibre/saude-feminina-editorial.webp",
+        imageAlt: "Conteúdo visual Equilibre sobre ferro e saúde feminina",
         href: "/equilibre-responde",
         featured: true,
       },
@@ -50,9 +48,8 @@ export const sections = [
         excerpt:
           "Registrar dúvidas e mudanças pode ajudar você a preparar uma conversa informada.",
         readingTime: "4 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Pessoa escrevendo em um caderno junto à janela",
+        image: "/equilibre/bem-estar-pausa.webp",
+        imageAlt: "Mulher em momento de bem-estar com o adesivo Equilibre",
         href: "/equilibre-responde",
       },
       {
@@ -61,9 +58,8 @@ export const sections = [
         excerpt:
           "Autoria, referências e contexto fazem diferença na hora de avaliar o que você lê.",
         readingTime: "6 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Livros abertos em uma mesa de leitura",
+        image: "/equilibre/rotina-cotidiana.webp",
+        imageAlt: "Mulher em situação cotidiana utilizando o adesivo Equilibre",
         href: "/equilibre-responde",
       },
     ] satisfies Article[],
@@ -75,9 +71,8 @@ export const sections = [
       "Cada fase traz perguntas e experiências próprias. Um lugar para explorar cuidado, desenvolvimento e informação.",
     intro: "Uma conversa aberta sobre as muitas fases da vida.",
     topics: ["Ciclo menstrual", "Gestação", "Desenvolvimento feminino", "Nutrição"],
-    image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1400&q=85",
-    imageAlt: "Retrato de uma mulher em luz natural",
+    image: "/equilibre/gestacao.webp",
+    imageAlt: "Mulher grávida em momento de acolhimento, usando o adesivo Equilibre",
     articles: [
       {
         category: "Fases da vida",
@@ -85,9 +80,8 @@ export const sections = [
         excerpt:
           "Como acolher mudanças e encontrar informações que respeitam a sua experiência.",
         readingTime: "5 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1100&q=85",
-        imageAlt: "Retrato de uma mulher em luz natural",
+        image: "/equilibre/quatro-contextos-equilibre.webp",
+        imageAlt: "Composição Equilibre sobre ciclo menstrual, vida ativa, gestação e todas as fases",
         href: "/alem-da-receita",
         featured: true,
       },
@@ -97,9 +91,8 @@ export const sections = [
         excerpt:
           "Conversas acolhedoras ajudam a construir uma relação mais informada com a saúde.",
         readingTime: "4 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Retrato espontâneo de uma mulher sorrindo",
+        image: "/equilibre/vida-ativa.webp",
+        imageAlt: "Mulher aproveitando um momento de energia e bem-estar",
         href: "/alem-da-receita",
       },
       {
@@ -108,9 +101,8 @@ export const sections = [
         excerpt:
           "Um convite para buscar orientação que considere suas necessidades e contexto.",
         readingTime: "6 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Alimentos variados organizados sobre uma mesa",
+        image: "/equilibre/quatro-contextos-equilibre.webp",
+        imageAlt: "Composição Equilibre com diferentes fases e contextos de cuidado",
         href: "/equilibre-responde",
       },
     ] satisfies Article[],
@@ -122,9 +114,8 @@ export const sections = [
       "Ideias possíveis sobre hábitos, descanso e alimentação para uma rotina que respeita o seu ritmo.",
     intro: "Pequenas conversas sobre os dias como eles são.",
     topics: ["Hábitos", "Descanso", "Alimentação", "Organização da rotina"],
-    image:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1400&q=85",
-    imageAlt: "Pessoa aproveita um momento de calma ao ar livre",
+    image: "/equilibre/vida-ativa.webp",
+    imageAlt: "Mulher aproveita um momento de bem-estar e energia",
     articles: [
       {
         category: "Autocuidado",
@@ -132,9 +123,8 @@ export const sections = [
         excerpt:
           "Uma reflexão sobre expectativas, limites e gestos que cabem na vida real.",
         readingTime: "5 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1100&q=85",
-        imageAlt: "Pessoa aproveita um momento de calma ao ar livre",
+        image: "/equilibre/autocuidado-trabalho.webp",
+        imageAlt: "Mulher em momento de autocuidado e organização da rotina",
         href: "/alem-da-receita",
         featured: true,
       },
@@ -144,9 +134,8 @@ export const sections = [
         excerpt:
           "Sem fórmulas prontas: um ponto de partida para pensar sobre suas pausas.",
         readingTime: "4 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Luz do sol atravessando uma paisagem tranquila",
+        image: "/equilibre/bem-estar-pausa.webp",
+        imageAlt: "Mulher aproveita um momento de descanso e bem-estar",
         href: "/alem-da-receita",
       },
       {
@@ -155,9 +144,8 @@ export const sections = [
         excerpt:
           "Observar a rotina sem transformá-la em uma lista de desempenho.",
         readingTime: "3 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Caderno aberto para anotações sobre uma mesa",
+        image: "/equilibre/rotina-cotidiana.webp",
+        imageAlt: "Mulher em movimento na rotina com o adesivo Equilibre",
         href: "/alem-da-receita",
       },
     ] satisfies Article[],
@@ -169,9 +157,8 @@ export const sections = [
       "Pesquisas, tecnologias em saúde e novas perguntas — com contexto sobre o que já se sabe e o que ainda está em estudo.",
     intro: "Ideias novas, explicadas com contexto e responsabilidade.",
     topics: ["Microagulhas dissolvíveis", "Tecnologias em saúde", "Pesquisas científicas", "Inovação"],
-    image:
-      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=85",
-    imageAlt: "Materiais e anotações em uma bancada de pesquisa",
+    image: "/equilibre/adesivo-equilibre.webp",
+    imageAlt: "Close do adesivo Equilibre aplicado no braço de uma mulher",
     articles: [
       {
         category: "Tecnologia em estudo",
@@ -179,9 +166,8 @@ export const sections = [
         excerpt:
           "Uma introdução ao conceito e às perguntas que pesquisas precisam responder.",
         readingTime: "6 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1100&q=85",
-        imageAlt: "Materiais de pesquisa organizados em uma bancada",
+        image: "/equilibre/adesivo-equilibre.webp",
+        imageAlt: "Detalhe do adesivo Equilibre em uma imagem de campanha",
         href: "/conheca-a-equilibre",
         featured: true,
       },
@@ -191,9 +177,8 @@ export const sections = [
         excerpt:
           "Perguntas úteis sobre métodos, limites e o alcance dos resultados publicados.",
         readingTime: "7 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Pesquisadora fazendo anotações em um caderno",
+        image: "/equilibre/saude-feminina-editorial.webp",
+        imageAlt: "Criativo Equilibre com informações sobre ferro e saúde feminina",
         href: "/equilibre-responde",
       },
       {
@@ -202,9 +187,8 @@ export const sections = [
         excerpt:
           "Conheça por que pesquisa e validação são etapas essenciais para falar de inovação.",
         readingTime: "5 min de leitura",
-        image:
-          "https://images.unsplash.com/photo-1581093458791-9d42e3c9f8c3?auto=format&fit=crop&w=900&q=85",
-        imageAlt: "Profissional trabalhando em laboratório de pesquisa",
+        image: "/equilibre/quatro-contextos-equilibre.webp",
+        imageAlt: "Imagem institucional Equilibre em quatro contextos de vida",
         href: "/conheca-a-equilibre",
       },
     ] satisfies Article[],
@@ -268,9 +252,8 @@ export const stories = [
     excerpt:
       "Uma conversa sobre trabalho, expectativas e os pequenos espaços que cada pessoa inventa para si.",
     author: "Relato editorial",
-    image:
-      "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=1100&q=85",
-    imageAlt: "Mulher em retrato com luz natural suave",
+    image: "/equilibre/rotina-cotidiana.webp",
+    imageAlt: "Mulher em momento cotidiano usando o adesivo Equilibre",
   },
   {
     category: "Maternidade e identidade",
@@ -278,9 +261,8 @@ export const stories = [
     excerpt:
       "Um relato sensível sobre novos ritmos e a importância de pedir acolhimento.",
     author: "Relato editorial",
-    image:
-      "https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Momento de afeto compartilhado em família",
+    image: "/equilibre/gestacao.webp",
+    imageAlt: "Mulher grávida em um momento de carinho e acolhimento",
   },
   {
     category: "Trabalho e bem-estar",
@@ -288,8 +270,7 @@ export const stories = [
     excerpt:
       "Como uma conversa honesta abriu espaço para enxergar outras possibilidades no cotidiano.",
     author: "Relato editorial",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85",
-    imageAlt: "Retrato de uma mulher em um momento tranquilo",
+    image: "/equilibre/autocuidado-trabalho.webp",
+    imageAlt: "Mulher conciliando a rotina e um momento de autocuidado",
   },
 ];

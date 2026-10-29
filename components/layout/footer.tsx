@@ -14,7 +14,7 @@ export function Footer() {
           <div className="relative">
             <Link
               href="/"
-              className="relative block h-16 w-48 rounded-full bg-[#fff8f4] px-3"
+              className="relative block h-16 w-48 rounded-[20px] bg-cream px-3"
               aria-label="Equilibre — início"
             >
               <Image
@@ -22,7 +22,7 @@ export function Footer() {
                 alt="Equilibre"
                 fill
                 sizes="192px"
-                className="object-contain mix-blend-multiply"
+                className="object-contain"
               />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-6 text-white/75">

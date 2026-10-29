@@ -37,7 +37,7 @@ export function SelfCareQuiz() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
             Um convite à descoberta
           </p>
-          <h2 className="font-display text-4xl leading-[1.05] tracking-[-0.04em] text-aubergine sm:text-5xl lg:text-6xl">
+          <h2 className="font-sans text-4xl font-bold leading-[1.05] tracking-[-0.04em] text-aubergine sm:text-5xl lg:text-6xl">
             Como anda seu autocuidado?
           </h2>
           <p className="mt-5 max-w-xl text-base leading-7 text-aubergine/80 sm:text-lg sm:leading-8">
@@ -79,7 +79,7 @@ export function SelfCareQuiz() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-raspberry">
                 Um caminho para começar
               </p>
-              <h3 className="mt-3 font-display text-3xl leading-tight text-aubergine">
+              <h3 className="mt-3 font-sans text-3xl font-bold leading-tight text-aubergine">
                 {selected.category}
               </h3>
               <p className="mt-3 max-w-lg text-sm leading-6 text-aubergine/75">

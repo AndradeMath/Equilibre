@@ -51,12 +51,15 @@ export function EditorialHero({
           )}
         </div>
         <div className="relative mx-auto w-full max-w-[600px]">
-          <div className="relative aspect-[1.08] overflow-hidden rounded-[28px_28px_28px_120px] bg-cream shadow-editorial sm:aspect-[1.12]">
+          <div className="group relative aspect-[1.08] overflow-hidden rounded-[28px_28px_28px_120px] bg-cream shadow-editorial sm:aspect-[1.12]">
             <div
               role="img"
               aria-label={imageAlt}
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url("${image}")` }}
+              className={`absolute inset-0 transition-transform duration-700 group-hover:scale-[1.03] ${image.includes("saude-feminina-editorial") ? "bg-contain bg-no-repeat bg-center" : "bg-cover bg-center"}`}
+              style={{
+                backgroundImage: `url("${image}")`,
+                backgroundColor: "var(--color-cream)",
+              }}
             />
           </div>
           <span aria-hidden="true" className="absolute -bottom-4 -left-5 size-20 rounded-full bg-yellow sm:size-24" />

@@ -72,7 +72,7 @@ export default function ConhecaEquilibrePage() {
       </section>
 
       <section className="bg-soft-turquoise py-16 sm:py-24">
-        <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12">
+        <div className="mx-auto grid max-w-[1440px] gap-10 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-12">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-raspberry">
               Tecnologia em contexto
@@ -80,6 +80,15 @@ export default function ConhecaEquilibrePage() {
             <h2 className="font-sans text-4xl font-bold leading-tight tracking-tight text-aubergine sm:text-5xl">
               Microagulhas dissolvíveis: uma proposta em pesquisa.
             </h2>
+            <div
+              role="img"
+              aria-label="Composição institucional Equilibre: ciclo menstrual, vida ativa, gestação e todas as fases"
+              className="mt-8 aspect-[1.5] overflow-hidden rounded-[28px] bg-cream bg-cover bg-center shadow-editorial"
+              style={{
+                backgroundImage:
+                  "url('/equilibre/quatro-contextos-equilibre.webp')",
+              }}
+            />
           </div>
           <div className="space-y-5 text-base leading-7 text-aubergine/80">
             <p>

@@ -21,7 +21,7 @@ export function Newsletter() {
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-yellow">
               Newsletter Equilibre
             </p>
-            <h2 className="font-display text-4xl leading-[1.05] tracking-[-0.04em] text-white sm:text-5xl">
+            <h2 className="font-sans text-4xl font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-5xl">
               Uma pausa para você.
             </h2>
             <p className="mt-4 max-w-md text-base leading-7 text-white/85">

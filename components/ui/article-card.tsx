@@ -10,6 +10,9 @@ type ArticleCardProps = {
 
 export function ArticleCard({ article, featured = false }: ArticleCardProps) {
   const articleHref = `/artigos/${articleSlug(article.title)}`;
+  const imageFit = article.image.includes("quatro-contextos")
+    ? "bg-contain bg-no-repeat bg-center"
+    : "bg-cover bg-center";
 
   return (
     <article
@@ -23,8 +26,11 @@ export function ArticleCard({ article, featured = false }: ArticleCardProps) {
         <div
           role="img"
           aria-label={article.imageAlt}
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.04]"
-          style={{ backgroundImage: `url("${article.image}")` }}
+          className={`absolute inset-0 transition-transform duration-700 group-hover:scale-[1.04] ${imageFit}`}
+          style={{
+            backgroundImage: `url("${article.image}")`,
+            backgroundColor: "var(--color-cream)",
+          }}
         />
         <BrandLeaf className="absolute bottom-3 right-3 size-10 text-yellow drop-shadow sm:size-12" />
         <span className="absolute left-4 top-4 rounded-full bg-yellow px-3 py-1.5 text-[0.68rem] font-semibold tracking-wide text-aubergine">

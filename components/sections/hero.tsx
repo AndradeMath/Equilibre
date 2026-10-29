@@ -44,14 +44,14 @@ export function Hero() {
           </p>
         </div>
         <div className="relative mx-auto w-full max-w-[610px] lg:max-w-none">
-          <div className="relative aspect-[0.96] overflow-hidden rounded-[32px_32px_32px_140px] bg-soft-pink shadow-editorial sm:aspect-[1.04]">
+          <div className="group relative aspect-[0.96] overflow-hidden rounded-[32px_32px_32px_140px] bg-soft-pink shadow-editorial sm:aspect-[1.04]">
             <div
               role="img"
-              aria-label="Mulher aproveitando a luz do sol em um momento de tranquilidade"
-              className="absolute inset-0 bg-cover bg-center"
+              aria-label="Mulher utilizando o adesivo Equilibre em um momento de autocuidado"
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.03]"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1600&q=90')",
+                  "url('/equilibre/adesivo-equilibre.webp')",
               }}
             />
           </div>

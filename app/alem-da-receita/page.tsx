@@ -38,7 +38,7 @@ export default function AlemDaReceitaPage() {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=85')",
+                  "url('/equilibre/bem-estar-pausa.webp')",
               }}
             />
           </div>

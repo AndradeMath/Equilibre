@@ -27,7 +27,7 @@ export function EditorialPathways() {
               <p className="relative text-xs font-semibold uppercase tracking-[0.18em] text-raspberry">
                 Caminho 0{index + 1}
               </p>
-              <h3 className="relative mt-8 font-display text-3xl leading-tight text-aubergine">
+              <h3 className="relative mt-8 font-sans text-3xl font-bold leading-tight text-aubergine">
                 {section.title}
               </h3>
               <p className="relative mt-3 min-h-[5rem] text-sm leading-6 text-aubergine/75">
